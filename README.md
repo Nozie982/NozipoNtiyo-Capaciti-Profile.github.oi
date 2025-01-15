@@ -7,13 +7,13 @@
 
 
 ## Technologies Used
-- HTML
-- CSS
-
+- Python
+- Data  Virtualization
+  
 
 ## Installation
 To view my portfolio locally, follow these steps:
-1. Clone the repository: `git clone https://github.com/Sinethemba7vitsha/portfolio.git`
+1. Clone the repository: `git clone https://github.com/Nozie982/NozipoNtiyo-Capaciti-Profile.github.oi
 2. Navigate to the project directory: `cd portfolio`
 3. Open `index.html` in your browser.
 
@@ -21,9 +21,9 @@ To view my portfolio locally, follow these steps:
 ## Features
 - Showcase of projects with descriptions and links
 - Contact form for inquiries
-- Responsive design for mobile and desktop
+  
 
 
 ## Contact
 Feel free to reach out:
-- Email: Maxwellsucksatcode@gmail.com
+- Email: noziponozie@gmail.com
