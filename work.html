@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" href="image.jpg" type="image/png">
+    <style>
+        /* Navigation */
+        .navbar {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 30px;
+            font-size: 18px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .navbar a:hover {
+            color: #333;
+        }
+
+        /* Layout Grid */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+            gap: 40px;
+            width: 80%;
+            margin: 100px auto;
+            overflow-x: hidden; /* Hide overflow for sliding effect */
+        }
+
+        /* Section Styles */
+        .section {
+            background-color: whitesmoke;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease; /* Add transition for sliding effect */
+        }
+
+        h1, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #2d2d2d;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        
+
+        /* Responsive Design */
+        @media (max-width: 800px) {
+            .layout-grid {
+                display: flex; /* Change to flexbox for sliding effect */
+                overflow-x: auto; /* Allow horizontal scrolling */
+                scroll-snap-type: x mandatory; /* Enable snap scrolling */
+            }
+
+            .section {
+                flex: 0 0 80%; /* Take up 80% width */
+                scroll-snap-align: start; /* Align items to start */
+                margin-right: 20px; /* Spacing between cards */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .section {
+                flex: 0 0 100%; /* Full width on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="projects.html">Projects</a>
+        <a href="contacts.html">Contact</a>
+    </div>
+
+    <!-- Layout Grid -->
+    <div class="layout-grid">
+        
+        <!-- Experience Section -->
+        <div class="experience-section section">
+            <h1>Work Experience</h1>
+            <p>Home Affairs : February 2023 to September 2024</p>
+            <p>Capaciti: September 2024 to Present</p>
+        </div>
+
+        <!-- Tech Stack Section -->
+        <div class="tech-stack-section section">
+            <h1>Tech Stack</h1>
+            <h3>Programming Language</h3>
+            <p>Python , Pandas , Numpy</p>
+
+            <h3>Visualizations </h3>
+            <p> Power BI , Excel</p>
+
+            <h3>Database</h3>
+            <p>SQL </p>
+            
+        </div>
+
+        <!-- Education Section -->
+        <div class="education-section section">
+            <h1>Education</h1>
+            <p>Diploma in Software Development</p>
+        </div>
+    </div>
+
+    <script>
+        // Optional: You can add any JS functionality here if needed
+        // For example, you can handle button clicks to slide the sections
+    </script>
+
+    <footer>&copy; 2025 Nozipo Ntiyo  </footer>
+</body>
+</html>

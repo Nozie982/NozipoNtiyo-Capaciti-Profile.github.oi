@@ -1,0 +1,459 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* BUTTON STYLES */
+.btn {
+    font-weight: 600;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    cursor: pointer;
+    outline: none;
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 3rem;
+}
+
+/* Main button color variations */
+.btn-color-1 {
+    background-color: #333; /* Dark button */
+    color: white;
+}
+
+.btn-color-2 {
+    background-color: transparent; /* Transparent button */
+    border: 2px solid #333; /* Outline border */
+    color: #333;
+}
+
+/* Hover effects */
+.btn:hover {
+    transform: translateY(-3px); /* Slight lift */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for hover */
+}
+
+.btn-color-1:hover {
+    background-color: #555; /* Lighter shade on hover */
+}
+
+.btn-color-2:hover {
+    background-color: #333; /* Solid fill on hover */
+    color: white;
+    border-color: #333;
+}
+
+/* Focus effect for better accessibility */
+.btn:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.5); /* Stronger focus outline */
+}
+
+.btn-container {
+    display: flex; /* Align buttons horizontally */
+    gap: 1rem; /* Space between the buttons */
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-top: 2rem; /* Adjust the space above the buttons */
+}
+
+
+
+  
+  
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f4ec; /* Beige-like background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 30px;
+            font-size: 18px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .navbar a:hover {
+            color: #333;
+        }
+
+        /* Header */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+        }
+
+        .text-section {
+            max-width: 500px;
+
+        }
+
+        .text-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4em;
+            color: #2d2d2d;
+            margin: 0;
+        }
+
+        .text-section p {
+            font-size: 18px;
+            color: #666;
+            margin-top: 15px;
+        }
+
+        .image-section {
+            background-color: #000;
+            width: 450px;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            width: 80%;
+        }
+
+        /*CV and Contact Details*/
+        .text-section button{  
+        height: 2rem;     
+        margin-top: 5rem;  
+        font-family: 'Playfair Display', serif;  
+        color: #2d2d2d;
+      
+       
+        
+        }
+
+        /* Floating blocks */
+        .floating-block {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #E5E5E5, #d4c1ff);
+            border-radius: 12px;
+        }
+
+        .floating-block1 {
+            top: 50px;
+            left: 20px;
+        }
+
+        .floating-block2 {
+            top: 200px;
+            right: 100px;
+        }
+
+        .floating-block3 {
+            bottom: 100px;
+            left: 50px;
+        }
+
+        .floating-block4 {
+            bottom: 50px;
+            right: 200px;
+        }
+
+        /* Icons */
+        .icons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .icons a {
+            margin-left: 15px;
+            color: #000;
+            font-size: 20px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .contact-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            color: #2d2d2d;
+            margin-bottom: 30px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .contact-details div {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .contact-details a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Floating blocks for design consistency */
+        .floating-block {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #E5E5E5, #d4c1ff);
+            border-radius: 12px;
+        }
+
+        .floating-block1 {
+            top: 50px;
+            left: 20px;
+        }
+
+        .floating-block2 {
+            top: 200px;
+            right: 100px;
+        }
+
+        .floating-block3 {
+            bottom: 100px;
+            left: 50px;
+        }
+
+        .floating-block4 {
+            bottom: 50px;
+            right: 200px;
+        }
+
+        
+          
+        /* Projects Section */
+        .projects-section {
+            text-align: center;
+            max-width: 1000px;
+        }
+
+        .projects-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            color: #2d2d2d;
+            margin-bottom: 40px;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .project {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(45% - 30px);
+            max-width: calc(45% - 30px);
+            height: 250px; /* Adjust this value based on your image size */
+            color: #fff; /* Set text color to white for contrast */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: hidden;
+        }
+
+        .project h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+
+        /* Hover Effect */
+        .project:hover {
+            transform: translateY(-10px); /* Slightly lifts the card */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: wheat;
+            background-color: wheat; /* Adds a stronger shadow on hover */
+        }
+
+        .project a:hover {
+            background-color: #444;
+            color: wheat;
+        }
+
+        /* Add a dark overlay on the card for better text readability */
+        .project::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 0;
+        }
+
+        /* Ensure content stays on top of the overlay */
+        .project h3, .project p, .project a {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Card hover effects */
+.experience-section, .tech-stack-section, .education-section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.experience-section:hover, .tech-stack-section:hover, .education-section:hover {
+    transform: translateY(-10px); /* Slightly lift the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: wheat;
+    color: whitesmoke;
+}
+
+
+
+
+
+/* Layout Grid */
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 80%;
+    margin: 100px auto;
+}
+
+/* Experience Section */
+.experience-section {
+    grid-column: 1 / 2;
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.experience-section h1 , .education-section h1 , .tech-stack-section h1{
+    font-family: 'Playfair Display', serif;
+    color: #2d2d2d;
+}
+.tech-stack-section h2 , h3{
+    font-family: 'Playfair Display', serif;
+}
+
+.experience-section p {
+    font-size: 18px;
+    color: #333;
+    margin: 30px 0;
+}
+
+/* Tech Stack Section */
+.tech-stack-section {
+    grid-column: 2 / 3;
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.tech-stack-section h3, .tech-stack-section h4 {
+    font-family: 'Playfair Display', serif;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+}
+
+.tech-stack-section p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Education Section */
+.education-section {
+    grid-column: 3 / 4;
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.education-section h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+}
+
+.education-section p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
