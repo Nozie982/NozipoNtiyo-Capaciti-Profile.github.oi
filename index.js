@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   
   document.addEventListener("DOMContentLoaded", function() {
-    const text = "Hi. I’m Nozipo Ntiyo.\nA Data Analyst.";
+    const text = "Hi. I’m Nozipo Ntiyo.\nA Data Engineer.";
     const typewriterText = document.getElementById("typewriter-text");
     let index = 0;
 
