@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const recognizedOptions = {
             " Who are you ": "My Name is Nozipo Ntiyo, I do Data Analyst.",
             " What do you do ": "I specialize in cleaning data ,working with Excel , Visualization",
-            " What is your tech stack ": "Python ,Pandas ,Numpy, Power BI",
+            " What is your tech stack ": "Python ,Pandas ,Numpy, SQL",
             " Industry Exprience ": "2 Years of Experience",
             " How can i contact you ": "You can contact me via email, phone, or LinkedIn."
         };
@@ -75,9 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
         chatbox.innerHTML = ""; // Clear previous messages when starting chat
         displayMessage("Hello, I'm Nozie the chatbot. How can I help you?", false, function () {
             showOptions([
-                { text: "Who are you ", response: "My Name is Nozipo Ntiyo, I do Data Analyst" },
+                { text: "Who are you ", response: "My Name is Nozipo Ntiyo, I do Data Engineering" },
                 { text: "What do you do ", response: "I specialize in cleaning data ,working with Excel , Visualization" },
-                { text: "What is your tech stack ", response: "Python ,Pandas ,Numpy, Power BI." },
+                { text: "What is your tech stack ", response: "Python ,Pandas ,Numpy, SQL." },
                 { text: "Industry Exprience ", response: "2 Years of Experience" },
                 {
                     text: "How can I contact you?",
