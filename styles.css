@@ -31,14 +31,14 @@ html {
 
 /* Main button color variations */
 .btn-color-1 {
-    background-color: #333; /* Dark button */
+    background-color: #FFDAB9; /* Dark button */
     color: white;
 }
 
 .btn-color-2 {
     background-color: transparent; /* Transparent button */
-    border: 2px solid #333; /* Outline border */
-    color: #333;
+    border: 2px solid #FFDAB9; /* Outline border */
+    color: #FFDAB9;
 }
 
 /* Hover effects */
@@ -52,9 +52,9 @@ html {
 }
 
 .btn-color-2:hover {
-    background-color: #333; /* Solid fill on hover */
+    background-color: #FFDAB9; /* Solid fill on hover */
     color: white;
-    border-color: #333;
+    border-color: #FFDAB9;
 }
 
 /* Focus effect for better accessibility */
